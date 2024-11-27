@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="rev.php" method="post">
+    <fieldset>
+    <lavel>Le nom d'employe : </lavel>
+    <input type="text" name="nom" placeholder="saisir le nom d'employe">
+    <button name="envoyer">Envoyer</button><br><br>
+    <label>Email : </label>
+    <input type="email" name="email" placeholder="exemple@gmail.com"><br><br>
+    <label>Mot de passe</label>
+    <input type="password" name="passe" placeholder="Mot de passe">
+    <button name="conn">se connecter</button><br><br>
+    <label>Name</label>
+    <input type="text" name="smiya" placeholder="saisir votre nom"><br><br>
+    <label>Votre commentaire :</label><br>
+    <textarea name="comment" ></textarea><br>
+    <button name="com">Envoyer</button><br><br>
+    <label>Un fichier CSV :</label><br>
+    <input type="file" name="fichier" accept=".csv"><br><br>
+    <button name="sub">Envoyer</button><br><br>
+    <h3>Saisir les produits :</h3>
+    <fieldset>
+    <input type="checkbox" name="products[]" value="ZEN"><label>ZEN</label>
+    <input type="checkbox" name="products[]" value="AGRADO"><label>AGRADO</label><br>
+    <input type="checkbox" name="products[]" value="SNONAS"><label>SNONAS</label>
+    <input type="checkbox" name="products[]" value="LAVANDERA"><label>LAVANDERA</label><br>
+    <input type="checkbox" name="products[]" value="TUTTO"><label>TUTTO</label>
+    <input type="checkbox" name="products[]" value="AMOS"><label>AMOS</label><br><br>
+    </fieldset>
+    <button name="p">Envoyer</button><br><br>
+    <label>Saisir le nom a ajouter :</label>
+    <input type="text" name="n"><br><br>
+    <button name="ajouter">Ajouter</button><br><br>
+    <label>Saisir le nom a modifier :</label>
+    <input type="text" name="nouveau_nom"><br><br>
+    <button name="modifier">Modifier</button><br><br>
+    <label>Saisir le nom a supprimer :</label>
+    <input type="text" name="n"><br><br>
+    <button name="supprimer">Supprimer</button><br><br>
+    <label>Nom du Produit: </label>
+    <select name="prdname[]">
+    <option >Castrol</option>
+   <option >Valéo</option> 
+   <option >Bosch</option>
+   </select>
+<label>Quantité</label>
+<input type="number" placeholder="Choisir la quantité du produit" name="prdqt">
+<button name="valid">Valider</button>
+</form><br><hr>
+  </fieldset>
+   </form>
+</body>
+</html>
